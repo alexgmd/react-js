@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import picture from './img/paris.jpg'
+
 import './WeatherCard.css'
 
 class WeatherCard extends Component {
@@ -10,7 +12,6 @@ class WeatherCard extends Component {
         DATA FORMAT SENT BY THE API :
 
         {
-            "pixabayPicture": string, //CUSTOM ADD VIA PIXABAY API CALL
             "location": {
                 "name": string,
                 "region": string,
@@ -41,8 +42,8 @@ class WeatherCard extends Component {
 
         return (
             <div className="card horizontal" style={ { margin: 'auto' } }>
-                <div className="card-image weather-img-container">
-                    <img alt="city" className="weather-img" src={ weather.pixabayPicture } />
+                <div className="card-image">
+                    <img alt="city" src={ picture } />
                     <span className="card-title" style={ { fontSize: 36 } }>
                         { weather.current.temp_c } °C
                     </span>

@@ -2,15 +2,12 @@ import * as request from 'request-promise'
 
 
 /* FREE JSON API EXAMPLE */
-
-/* WEATHER: https://www.apixu.com/api-explorer.aspx */
-
-/* IMAGES: https://pixabay.com/api/docs/ */
+/* https://www.apixu.com/api-explorer.aspx */
 
 export const ENDPOINTS = {
 
     WEATHER_API_URL: 'http://api.apixu.com/v1/current.json',
-    PIXABAY_API_URL: 'https://pixabay.com/api/'
+    TMDB_API_URL: 'https://api.themoviedb.org/3'
 
 }
 

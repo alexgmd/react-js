@@ -9,9 +9,16 @@
     font-size: 125%;
 }
 
+.weather-data h2{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 125%;
+    color: rgba(255, 60, 60, 1);
+}
+
 .weather-data i {
     margin-right: 5px;
-    color: #ffab40;
+    color: rgba(255, 60, 60, 1);
     vertical-align: middle;
 }
 
@@ -19,21 +26,29 @@
     margin-bottom: 15px !important;
 }
 
+.weather-data p span a {
+    color: rgba(255, 60, 60, 1);
+}
+
+.weather-data p span a:hover {
+	opacity: 0.6;
+	transition: all .2s linear;}
+
 .weather-city {
     font-size: 22px;
     pointer-events: none;
 }
 
-.weather-img-container {
-    max-width: 200px !important;
-    overflow: hidden;
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    opacity: 0.8;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.weather-img-container .card-title {
-    text-shadow: 0px 2px 3px black;
-}
-
-.weather-img {
-    max-height: 240px;
-    max-width: initial !important;
+img{
+    size: auto auto;
 }
